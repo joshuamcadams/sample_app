@@ -1,4 +1,4 @@
-module ApplicationHelper
+ module ApplicationHelper
 
 	
 	# Returns the full page title on a per-page basis
