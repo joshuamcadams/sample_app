@@ -12,11 +12,15 @@ $grayMediumlight: #eaeaea;
 
 /* universal */
 
+.jumbotron { background-image: image-url('troll-bg.png');
+    background-repeat: no-repeat;
+    background-position: center right; }
+
 html {
 	overflow-y: scroll;
 }
 
-body { 
+body {  
 }
 
 section {
