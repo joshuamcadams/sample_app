@@ -21,7 +21,7 @@ class UsersController < ApplicationController
   	@user = User.new(params[:user])
   	if @user.save 
       sign_in @user
-  		flash[:success] = "Welcome to the Sample App!"
+  		flash[:success] = "Welcome to the Trollster!"
   		redirect_to @user
   	else
   		render 'new'	
@@ -35,7 +35,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     if @user.update_attributes(params[:user])
       sign_in @user
-      flash[:success] = "You Have Updated Your Info"
+      flash[:success] = "You Have Updated Your Trollfile"
       redirect_to @user
     else
       render 'edit'  
@@ -44,7 +44,7 @@ class UsersController < ApplicationController
 
   def destroy
     User.find(params[:id]).destroy
-    flash[:success] = "User Destroyed"
+    flash[:success] = "Troll Destroyed"
     redirect_to users_path
   end
 

@@ -5,7 +5,7 @@ before_filter :correct_user, only: :destroy
 	def create
 		@micropost = current_user.microposts.build(params[:micropost])
 		if @micropost.save
-			flash[:success] = "Micropost created!"
+			flash[:success] = "Growl created!"
 			redirect_to root_path
 		else
 			@feed_items = []
