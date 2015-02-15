@@ -11,5 +11,3 @@
  *= require_self
  *= require_tree .
 */
-
-#home-jumbo { background: url(<%= asset_path 'troll-bg.png' %>) no-repeat center bottom;  }
